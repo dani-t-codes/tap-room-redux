@@ -8,7 +8,7 @@ function KegList(props) {
       <hr/>
       {props.kegList.map((keg) =>
         <Keg
-          //whenKegClicked = {props.onKegSelection} //from TicketControl hence props not keg
+          whenKegClicked = {props.onKegSelection} //from TicketControl hence props not keg
           name={keg.name}
           brand={keg.brand}
           priceByKeg={keg.priceByKeg}
