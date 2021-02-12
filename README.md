@@ -49,7 +49,11 @@ onclick to delete an item && reduce quantity of item (inventory) {stretch}
 - Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.
 - When the quantity of an item is reduced to 0, the item should say "Out of Stock". A user should not be able to reduce the quantity of an item below 0.
 
-### Stretch Goals
+## Wireframe
+
+!["Tap Room Wireframe"](https://i.postimg.cc/V6Jn98HR/Tap-Room-Wire-Frame.png)
+
+## Stretch Goals
 
 - Implement more CSS/CSS objects
 
