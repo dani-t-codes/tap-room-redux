@@ -41,11 +41,11 @@ view # of pints left in a keg (full keg ~ 124 pints)
 have keg say "OOS" when pintsLeft === 0 {stretch}
 
 UPDATE
-update whole item {stretch}
+update keg {stretch}
 onclick for decrementing quantity(inventory) - (kegs !<= 0)
 
 DELETE
-onclick to delete an item && reduce quantity of item (inventory) {stretch}
+onclick to delete a keg && reduce quantity of keg (inventory) {stretch}
 
 <div align="center">
 
@@ -57,9 +57,9 @@ onclick to delete an item && reduce quantity of item (inventory) {stretch}
 
 ## User Stories
 
-- A user should be able to Create, Read, Update and Delete items in the store. Items should have fields for name, brand, price, alcoholContent, and pintsLeft.
+- A user should be able to Create, Read, Update and Delete kegs in the tap room. Kegs should have fields for name, brand, price, alcoholContent, and pintsLeft.
 - Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.
-- When the quantity of an item is reduced to 0, the item should say "Out of Stock". A user should not be able to reduce the quantity of an item below 0.
+- When the quantity of an keg is reduced to 0, the keg should say "Out of Stock". A user should not be able to reduce the quantity of a keg below 0.
 
 <div align="center">
 
