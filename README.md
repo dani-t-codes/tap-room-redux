@@ -29,23 +29,23 @@ TODO
 ### Objectives
 
 READ
-view list of all kegs with (name, brand, price & alcoholContent)
-onclick to toggle form
+view list of all kegs with (name, brand, price & alcoholContent) {_done_}
+onclick to toggle form {_done_}
 
 CREATE
-onclick to create a new keg from form
+onclick to create a new keg from form {_done_}
 
 READ - Details
-onclick toggle details
-view # of pints left in a keg (full keg ~ 124 pints)
+onclick toggle details {_done_}
+view # of pints left in a keg (full keg ~ 124 pints) {_done_}
 have keg say "OOS" when pintsLeft === 0 {stretch}
 
 UPDATE
+onclick for decrementing quantity(inventory) - (kegs !<= 0) {_done_}
 update keg {stretch}
-onclick for decrementing quantity(inventory) - (kegs !<= 0)
 
 DELETE
-onclick to delete a keg && reduce quantity of keg (inventory) {stretch}
+onclick to delete a keg (inventory) {stretch}
 
 <div align="center">
 
