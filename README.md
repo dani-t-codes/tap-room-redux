@@ -1,3 +1,5 @@
+<div align="center">
+
 # Tap Room
 
 ## Fundamentals of React Independent Project for Epicodus, Weeks 16 & 17
@@ -5,6 +7,8 @@
 ### By Danielle Thompson
 
 ### Project began 2.12.21
+
+</div>
 
 ## Get in Touch
 
@@ -53,13 +57,9 @@ onclick to delete an item && reduce quantity of item (inventory) {stretch}
 - Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.
 - When the quantity of an item is reduced to 0, the item should say "Out of Stock". A user should not be able to reduce the quantity of an item below 0.
 
-:-:
-
 ## Wireframe
 
 ![Tap Room Wireframe](https://i.postimg.cc/V6Jn98HR/Tap-Room-Wire-Frame.png)
-
-:-:
 
 ## Stretch Goals
 
