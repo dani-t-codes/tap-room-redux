@@ -1,27 +1,55 @@
 import React from 'react';
+import KegList from "./KegList";
+import KegDetail from "./KegDetail";
+import NewKegForm from "./NewKegForm";
 
 class KegControl extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      //formVisibleOnPage: false,
-      //createNewKeg: false,
+      formVisibleOnPage: false,
+      createNewKeg: false,
       masterKegList: [],
       selectedKeg: null,
       //editing: false
     }
   }
 
+  //Read
+  showListOrForm = () => {
+    if (this.state.selectedKeg != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedKeg: null,
+        //editing: false
+      });
+    } else {
+      this.setState(prevState => ({
+        formVisibleOnPage: !prevState.formVisibleOnPage
+      }));
+    }
+  }
+
+  //Read - Details
+
+  //Create
+
   render() {
     let buttonText = null;
     let currentlyVisibleState = null;
 
-    if (this.state.formVisibleOnPage) {
-      //currentlyVisibleState = <NewKegForm on NewKegCreation={this.handleAddingNewKegToList} />;
+    if (this.state.selectedKeg != null) {
+      currentlyVisibleState =
+      <KegDetail
+        keg = {this.state.selectedKeg}/>;
+      {/* onClicking Buttons go here*/}
+      buttonText = "Return to Keg List";
+    } else if (this.state.formVisibleOnPage) {
+      currentlyVisibleState = <NewKegForm on NewKegCreation={this.handleAddingNewKegToList} />;
       buttonText = "Return to Keg List";
     } else {
-      //currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
+      currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
       buttonText = "Add New Item";
     }
     return (
