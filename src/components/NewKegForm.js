@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import PropTypes from "prop-types";
-import ReusableKegForm from './reusableKegForm';
+import ReusableKegForm from './ReusableKegForm';
 
 function NewKegForm(props) {
 

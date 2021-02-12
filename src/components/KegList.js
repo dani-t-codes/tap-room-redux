@@ -1,5 +1,5 @@
 import React from "react";
-import Keg from "./keg";
+import Keg from "./Keg";
 import PropTypes from "prop-types";
 
 function KegList(props) {
