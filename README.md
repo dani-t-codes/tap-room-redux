@@ -47,9 +47,13 @@ onclick for decrementing quantity(inventory) - (kegs !<= 0)
 DELETE
 onclick to delete an item && reduce quantity of item (inventory) {stretch}
 
+<div align="center">
+
 ## Component Diagram
 
 ![Tap Room File Tree](https://i.postimg.cc/BnXjV00P/Tap-Room-File-Tree.png)
+
+</div>
 
 ## User Stories
 
@@ -57,9 +61,13 @@ onclick to delete an item && reduce quantity of item (inventory) {stretch}
 - Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.
 - When the quantity of an item is reduced to 0, the item should say "Out of Stock". A user should not be able to reduce the quantity of an item below 0.
 
+<div align="center">
+
 ## Wireframe
 
 ![Tap Room Wireframe](https://i.postimg.cc/V6Jn98HR/Tap-Room-Wire-Frame.png)
+
+</div>
 
 ## Stretch Goals
 
@@ -131,8 +139,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ___
 
+<div align="center">
+
 #### Legal, or License
 
 This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
 Copyright (c) 2021 *_Danielle Thompson_*
+
+</div>
