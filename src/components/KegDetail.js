@@ -5,8 +5,9 @@ function KegDetail(props) {
   const { keg } = props; //, onClickingDelete, onClickingBuy}
   return (
     <>
-      <h1>Keg Details:</h1>
-      <h2>Name: {keg.name}</h2>
+      <h2>Keg Details</h2>
+      <hr />
+      <h3>Name: {keg.name}</h3>
       <h3>Brand or Brewery: {keg.brand}</h3>
       <h3>Alcohol Content: {keg.alcoholContent}%</h3>
       <h3>Pints Left: {keg.pintsLeft} / 124</h3>
