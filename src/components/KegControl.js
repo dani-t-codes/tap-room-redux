@@ -38,6 +38,13 @@ class KegControl extends React.Component {
   }
 
   //Create
+  handleAddingNewKegToList = (newKeg) => {
+    const newMasterKegList = this.state.masterKegList.concat(newKeg);
+    this.setState({
+      masterKegList: newMasterKegList,
+      formVisibleOnPage: false
+    });
+  }
 
   render() {
     let buttonText = null;
