@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 function KegList(props) {
   return (
     <>
+      <h2>Available Kegs</h2>
       <hr/>
       {props.kegList.map((keg) =>
         <Keg
