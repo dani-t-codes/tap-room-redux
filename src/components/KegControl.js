@@ -12,7 +12,7 @@ class KegControl extends React.Component {
       createNewKeg: false,
       masterKegList: [],
       selectedKeg: null,
-      //editing: false
+   //editing: false
     }
   }
 
@@ -61,7 +61,7 @@ class KegControl extends React.Component {
       buttonText = "Return to Keg List";
     } else {
       currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
-      buttonText = "Add New Item";
+      buttonText = "Add New Keg";
     }
     return (
       <>
