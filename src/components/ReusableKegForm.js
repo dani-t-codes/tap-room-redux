@@ -16,15 +16,18 @@ function ReusableKegForm(props) {
         <input class="form-control"
           type="number"
           name="priceByKeg"
+          placeholder="Price by Keg"
           min="0"/>
         <input class="form-control"
           type="number"
           name="alcoholContent"
+          placeholder="Alcohol Content"
           min="0"
           max="20"/>
         <input class="form-control"
           type="number"
           name="pintsLeft"
+          placeholder="Pints per keg (full-size ~124 pints)"
           min="0"
           max="124"/>
         <button type="submit" class="btn btn-default">{props.buttonText}</button>
