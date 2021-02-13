@@ -59,6 +59,19 @@ class KegControl extends React.Component {
     });
   }
 
+  //Restock Large Keg
+  handleRestockClick = () => {
+    const selectedKeg = this.state.selectedKeg;
+    const kegToRestock = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft + 124});
+    const editedMasterKegList = this.state.masterKegList
+      .filter(keg => keg.id !== this.state.selectedKeg.id)
+      .concat(kegToRestock);
+    this.setState({
+      masterKegList: editedMasterKegList,
+      selectedKeg: kegToRestock
+    });
+  }
+
   render() {
     let buttonText = null;
     let currentlyVisibleState = null;
