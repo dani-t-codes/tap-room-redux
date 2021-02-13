@@ -13,6 +13,9 @@ function KegDetail(props) {
       {keg.pintsLeft === 0 ?
       <h3>Out of stock! Better luck next time.</h3>
       : <h3>Pints Remaining: {keg.pintsLeft}</h3>}
+      {keg.pintsLeft > 0 && keg.pintsLeft <= 10 ?
+      <h4><em>Almost Empty - get 'em while they're cold!</em></h4>
+      : null}
       { keg.pintsLeft > 0 ? <button onClick={props.onClickingBuy} class="btn btn-success">Buy Pint</button>
       : <button onClick={props.onClickingRestock} class="btn btn-info">Restock Large Keg</button>}
       <button onClick={() => onClickingDelete(keg.id)} class="btn btn-danger">Delete Keg</button>
