@@ -64,12 +64,13 @@ class KegControl extends React.Component {
     const selectedKeg = this.state.selectedKeg;
     const kegToRestock = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft + 124});
     const editedMasterKegList = this.state.masterKegList
-      .filter(keg => keg.id !== this.state.selectedKeg.id)
-      .concat(kegToRestock);
+    .filter(keg => keg.id !== this.state.selectedKeg.id)
+    .concat(kegToRestock);
     this.setState({
       masterKegList: editedMasterKegList,
       selectedKeg: kegToRestock
     });
+    console.log("success");
   }
 
   render() {
@@ -80,7 +81,8 @@ class KegControl extends React.Component {
       currentlyVisibleState =
       <KegDetail
         keg = {this.state.selectedKeg}
-        onClickingBuy = {this.handleBuyClick} />;
+        onClickingBuy = {this.handleBuyClick}
+        onClickingRestock = {this.handleRestockClick} />;
       buttonText = "Return to Keg List";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />;
