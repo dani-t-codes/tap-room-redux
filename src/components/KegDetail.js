@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 function KegDetail(props) {
-  const { keg, onClickingBuy, onClickingRestock, onClickingDelete } = props;
+  const { keg, onClickingEdit, onClickingDelete } = props;
   return (
     <>
       <h2>Keg Details</h2>
@@ -22,6 +22,7 @@ function KegDetail(props) {
       { keg.pintsLeft > 0
       ? <button onClick={props.onClickingBuy} class="btn btn-success">Buy Pint</button>
       : <button onClick={props.onClickingRestock} class="btn btn-info">Restock Large Keg</button>}
+      <button onClick={() => onClickingEdit(keg.id)} class="btn btn-info">Update Keg</button>
       <button onClick={() => onClickingDelete(keg.id)} class="btn btn-danger">Delete Keg</button>
       <hr/>
     </>
@@ -31,7 +32,7 @@ function KegDetail(props) {
 KegDetail.propTypes = {
   keg: PropTypes.object,
   onClickingDelete: PropTypes.func,
-  //onClickingEdit: PropTypes.func,
+  onClickingEdit: PropTypes.func,
   onClickingBuy: PropTypes.func,
   onClickingRestock: PropTypes.func
 }

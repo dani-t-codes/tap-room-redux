@@ -1,4 +1,4 @@
-import React from "/react";
+import React from "react";
 import ReusableKegForm from "./ReusableKegForm";
 import PropTypes from "prop-types";
 
