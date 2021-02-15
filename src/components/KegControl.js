@@ -124,7 +124,7 @@ class KegControl extends React.Component {
     return (
       <>
         {currentlyVisibleState}
-        <button class="btn btn-default" onClick={this.showListOrForm}>{buttonText}</button>
+        <button class="btn btn-warningdefault" onClick={this.showListOrForm}>{buttonText}</button>
       </>
     );
   }
