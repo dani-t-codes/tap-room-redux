@@ -51,7 +51,7 @@ ___
 
 ## Description
 
-TODO
+This is an application for a tap room to track their keg inventory.
 
 ### Objectives
 
