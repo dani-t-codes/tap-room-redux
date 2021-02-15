@@ -10,17 +10,44 @@
 
 </div>
 
-## Get in Touch
+---
+
+### Get in Touch
 
 danithompson74 at gmail.com | [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
 
-## Known Bugs
+### Known Bugs
 
-No known bugs at this time.
+_No known bugs at this time._
 
 [Report bugs here.](https://github.com/dani-t-codes/tap-room/issues) | [Request features here.](https://github.com/dani-t-codes/tap-room/issues)
 
 ___
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [Description](#description)
+    - [Objectives](#objectives)
+  - [Component Diagram](#component-diagram)
+  - [User Stories](#user-stories)
+  - [Wireframe](#wireframe)
+  - [Stretch Goals](#stretch-goals)
+  - [Technologies Used](#technologies-used)
+    - [Setup/Installation Requirements](#setupinstallation-requirements)
+        - [Running the Project Locally](#running-the-project-locally)
+          - [For Mac Users](#for-mac-users)
+          - [For Windows Users](#for-windows-users)
+          - [For Both Mac & Windows systems](#for-both-mac--windows-systems)
+        - [Available Scripts](#available-scripts)
+          - [`npm start`](#npm-start)
+          - [`npm test`](#npm-test)
+          - [`npm run build`](#npm-run-build)
+          - [`npm run eject`](#npm-run-eject)
+      - [Legal, or License](#legal-or-license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Description
 
@@ -38,14 +65,14 @@ onclick to create a new keg from form {_done_}
 READ - Details
 onclick toggle details {_done_}
 view # of pints left in a keg (full keg ~ 124 pints) {_done_}
-have keg say "OOS" when pintsLeft === 0 {stretch}
+have keg say "OOS" when pintsLeft === 0 {stretch} {_done_}
 
 UPDATE
 onclick for decrementing quantity(inventory) - (kegs !<= 0) {_done_}
-update keg {stretch}
+update keg {stretch} {_done_}
 
 DELETE
-onclick to delete a keg (inventory) {stretch}
+onclick to delete a keg (inventory) {stretch} {_done_}
 
 <div align="center">
 
@@ -55,13 +82,24 @@ onclick to delete a keg (inventory) {stretch}
 
 </div>
 
+---
+
 ## User Stories
 
-- A user should be able to Create, Read, Update and Delete kegs in the tap room. Kegs should have fields for name, brand, price, alcoholContent, and pintsLeft.
-- Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.
-- When the quantity of an keg is reduced to 0, the keg should say "Out of Stock". A user should not be able to reduce the quantity of a keg below 0.
+|  # 	|  Stories 	|
+|---	|---	|
+|  1 	|  A user should be able to Create, Update, Delete, and see list and details of kegs in the tap room. 	|
+|  2 	|   Decrease kegQuantity remaining per keg when a pint is purchased. For instance, if a user clicks "Buy", the quantity will decrease by one.	|
+|  3 	|   When the quantity of an keg is reduced to 0, the keg should say "Out of Stock". A user should not be able to reduce the quantity of a keg below 0.	|
+|  4 	|   When the quantity of an keg is reduced to 0, the user should be prompted with the option to restock the keg.	|
+|  5 	|   When there is a keg in the inventory that is extra expensive, the user should see the details of the keg listed in red font, not black.	|
+|  6 	|   Kegs should have fields for name, brand, price, alcoholContent.	|
+|  7 	|   A user should be able to see how many pints are left in a keg.	|
+
 
 <div align="center">
+
+---
 
 ## Wireframe
 
@@ -78,9 +116,11 @@ onclick to delete a keg (inventory) {stretch}
 
 - [VS Code](https://code.visualstudio.com/download)
 - Git & GitHub
-- JavaScript ES6
+- ES6 JavaScript
 - JSX
 - React Framework v17.0
+- npm
+- node.js
 - `create-react-app`
 - `npm install --save-exact react-scripts@3.2.0`
 - webpack v5.11.1
@@ -88,18 +128,36 @@ onclick to delete a keg (inventory) {stretch}
 - ESLint
 - node.js v15.8.0
 - Bootstrap v5.0.0
+- [Unsplash](unsplash.com)
 
 ___
 
 ### Setup/Installation Requirements
 
-#### Live Page
-
 - To access the live page visit ... TODO
 
-#### Running the application locally
+##### Running the Project Locally
 
-TODO
+###### For Mac Users
+
+- Access Terminal in your Finder, and open a new window. Install the package manager, [Homebrew](https://brew.sh/), on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
+- Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`.
+- Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`.
+- Now, install Node.js through Homebrew with the following command: `brew install node`.
+- Confirm that node and npm (Node's package manager that is automatically installed alongside Node) are on your working system with two command lines `node -v` & `npm -v`, respectively returning something resembling `v14.5.0` & `6.14.5` (or higher).
+
+###### For Windows Users
+
+- Open a new Command Prompt window by typing "Cmd" in your computer's search bar.
+- Determine whether you have 32-bit or 64-bit Windows by following these [instructions](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running).
+- Go to [Git Bash](https://gitforwindows.org/), click on the "Download" button, and download the corresponding exe file from the Git for Windows site._
+- Follow the instructions in the set up menu.
+
+###### For Both Mac & Windows systems
+
+* Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/tap-room), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/tap-room.git`.
+* Go to the [Node.js website](https://nodejs.org/en/download/) and download the appropriate source code for your Windows operating system.
+* Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice.
 
 ##### Available Scripts
 
