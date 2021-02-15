@@ -5,7 +5,7 @@ function Keg(props) {
   return (
     <>
     <div class="card"
-      style={{backgroundColor: "#6d8764",
+      style={{backgroundColor: "#BF8578",
       color: "white",
       textShadow: "1px 1px 0px #d3d3d3",
       padding: '10px',

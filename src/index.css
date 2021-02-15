@@ -19,3 +19,11 @@ code {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+body {
+  background-image: url('img/adam-wilson-ANK5zq-g_-g-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  background-size: cover;
+}
