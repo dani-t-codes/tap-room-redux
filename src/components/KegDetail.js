@@ -20,10 +20,10 @@ function KegDetail(props) {
       ? <h4><em>Almost Empty - get 'em while they're cold!</em></h4>
       : null}
       { keg.pintsLeft > 0
-      ? <button onClick={props.onClickingBuy} class="btn btn-warningsuccess">Buy Pint</button>
-      : <button onClick={props.onClickingRestock} class="btn btn-warninginfo">Restock Large Keg</button>}
-      <button onClick={() => onClickingEdit(keg.id)} class="btn btn-warninginfo">Update Keg</button>
-      <button onClick={() => onClickingDelete(keg.id)} class="btn btn-warningdanger">Delete Keg</button>
+      ? <button onClick={props.onClickingBuy} className="btn btn-warningsuccess">Buy Pint</button>
+      : <button onClick={props.onClickingRestock} className="btn btn-warninginfo">Restock Large Keg</button>}
+      <button onClick={() => onClickingEdit(keg.id)} className="btn btn-warninginfo">Update Keg</button>
+      <button onClick={() => onClickingDelete(keg.id)} className="btn btn-warningdanger">Delete Keg</button>
       <hr/>
     </>
   );

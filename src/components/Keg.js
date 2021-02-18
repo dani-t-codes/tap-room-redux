@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Keg(props) {
   return (
     <>
-    <div class="card"
+    <div className="card"
       style={{backgroundColor: "#BF8578",
       color: "white",
       textShadow: "1px 1px 0px #d3d3d3",
