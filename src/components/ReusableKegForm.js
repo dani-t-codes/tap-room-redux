@@ -30,7 +30,7 @@ function ReusableKegForm(props) {
           placeholder="Pints per keg (full-size ~124 pints)"
           min="0"
           max="124"/>
-        <button type="submit" className="btn btn-warningdefault">{props.buttonText}</button>
+        <button type="submit" style = {{marginTop: '10px'}} className="btn btn-warning">{props.buttonText}</button>
       </form>
     </>
   );
