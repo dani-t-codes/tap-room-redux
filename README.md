@@ -2,11 +2,11 @@
 
 # Tap Room
 
-## Fundamentals of React Independent Project for Epicodus, Weeks 16 & 17
+## Fundamentals of React & Redux Independent Project for Epicodus, Weeks 16 & 17
 
 ### By Danielle Thompson
 
-### Project began 2.12.21
+### Project began 2.12.21. Last updated 2.19.21
 
 </div>
 
