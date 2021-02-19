@@ -80,7 +80,7 @@ class KegControl extends React.Component {
   }
 
   //Reduce Keg Inventory
-  handleBuyClick = (selectedKeg) => {
+  handleBuyClick = () => {
     const { dispatch } = this.props;
     const { pintsLeft, id } = pintToBuy;
     const selectedKeg = this.props.selectedKeg;
@@ -102,13 +102,21 @@ class KegControl extends React.Component {
 
   //Restock Large Keg
   handleRestockClick = () => {
-    const selectedKeg = this.state.selectedKeg;
-    const kegToRestock = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft + 124});
-    const editedMasterKegList = this.state.masterKegList
-      .filter(keg => keg.id !== this.state.selectedKeg.id)
-      .concat(kegToRestock);
+    const { dispatch } = this.props;
+    const { pintsLeft, id } = kegToRestock;
+    const selectedKeg = this.props.selectedKeg;
+    // const kegToRestock = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft + 124});
+    // const editedMasterKegList = this.state.masterKegList
+    //   .filter(keg => keg.id !== this.state.selectedKeg.id)
+    //   .concat(kegToRestock);
+    const action = {
+      type: 'RESTOCK_KEG',
+      pintsLeft: pintsLeft + 124,
+      id
+    };
+    dispatch(action);
     this.setState({
-      masterKegList: editedMasterKegList,
+      // masterKegList: editedMasterKegList,
       selectedKeg: kegToRestock
     });
   }
