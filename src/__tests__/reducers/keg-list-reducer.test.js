@@ -3,7 +3,7 @@ import kegListReducer from '../../reducers/keg-list-reducer';
 describe('keg list reducer', () => {
 
   let action;
-  const kegData ={
+  const currentState ={
     1 : {
       name: 'Tyrannical IPA',
       brand: 'Fort George',
@@ -26,7 +26,7 @@ describe('keg list reducer', () => {
   });
 
   test('Should successfully add new keg data to masterKegList', () => {
-    const { name, brand, priceByKeg, alcoholContent, pintsLeft, id } = kegData;
+    const { name, brand, priceByKeg, alcoholContent, pintsLeft, id } = currentState;
     action = {
       type: 'ADD_KEG',
       name,
