@@ -80,14 +80,22 @@ class KegControl extends React.Component {
   }
 
   //Reduce Keg Inventory
-  handleBuyClick = () => {
-    const selectedKeg = this.state.selectedKeg;
-    const pintToBuy = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft - 1});
-    const editedMasterKegList = this.state.masterKegList
-      .filter(keg => keg.id !== this.state.selectedKeg.id)
-      .concat(pintToBuy);
+  handleBuyClick = (selectedKeg) => {
+    const { dispatch } = this.props;
+    const { pintsLeft, id } = pintToBuy;
+    const selectedKeg = this.props.selectedKeg;
+    // const pintToBuy = Object.assign({}, selectedKeg, {pintsLeft: selectedKeg.pintsLeft - 1});
+    const action = {
+      type: 'BUY_PINT',
+      pintsLeft: selectedKeg.pintsLeft - 1,
+      id
+    }
+    // const editedMasterKegList = this.state.masterKegList
+    //   .filter(keg => keg.id !== this.state.selectedKeg.id)
+    //   .concat(pintToBuy);
+    dispatch(action);
     this.setState({
-      masterKegList: editedMasterKegList,
+      // masterKegList: editedMasterKegList,
       selectedKeg: pintToBuy
     });
   }
