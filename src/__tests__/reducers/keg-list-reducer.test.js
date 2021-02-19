@@ -48,20 +48,20 @@ describe('keg list reducer', () => {
     });
   });
 
-  test('Should successfully restock a keg and update selected keg', () => {
-    const { pintsLeft, id } = currentState;
-    action = {
-      type: 'BUY_PINT',
-      pintsLeft: pintsLeft - 1,
-      id: 1
-    };
-    expect(kegListReducer({}, action)).toEqual({
-      1 : {
-        pintsLeft: 123,
-        id
-      }
-    });
-  });
+  // test('Should successfully restock a keg and update selected keg', () => {
+  //   const { pintsLeft, id } = currentState;
+  //   action = {
+  //     type: 'BUY_PINT',
+  //     pintsLeft: pintsLeft - 1,
+  //     id: 1
+  //   };
+  //   expect(kegListReducer({}, action)).toEqual({
+  //     1 : {
+  //       pintsLeft: 123,
+  //       id: 1
+  //     }
+  //   });
+  // });
 
   test('Should successfully delete a keg', () => {
     action = {
