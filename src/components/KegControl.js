@@ -107,11 +107,13 @@ class KegControl extends React.Component {
 
   //Delete Keg
   handleDeletingKeg = (id) => {
-    const newMasterKegList = this.state.masterKegList.filter(keg => keg.id !== id);
-    this.setState({
-      masterKegList: newMasterKegList,
-      selectedKeg: null
-    })
+    const { dispatch } = this.props;
+    const action = {
+      type: 'DELETE_KEG',
+      id
+    }
+    dispatch(action);
+    this.setState({selectedKeg: null});
   }
 
   render() {
