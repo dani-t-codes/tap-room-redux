@@ -3,13 +3,22 @@ import kegListReducer from '../../reducers/keg-list-reducer';
 describe('keg list reducer', () => {
 
   let action;
-  const kegData = {
-    name: 'Tyrannical IPA',
-    brand: 'Fort George',
-    priceByKeg: 120,
-    alcoholContent: 8.4,
-    pintsLeft: 124,
-    id: 1
+  const kegData ={
+    1 : {
+      name: 'Tyrannical IPA',
+      brand: 'Fort George',
+      priceByKeg: 120,
+      alcoholContent: 8.4,
+      pintsLeft: 124,
+      id: 1 },
+    2: {
+      name: 'Soft Seasonal Saison',
+      brand: 'Bend Brewing',
+      priceByKeg: 105,
+      alcoholContent: 4.4,
+      pintsLeft: 100,
+      id: 2,
+    }
   };
 
   test('Should return default state if there is no action type passed into the reducer', () => {
@@ -27,7 +36,6 @@ describe('keg list reducer', () => {
       pintsLeft,
       id
     };
-
     expect(kegListReducer({}, action)).toEqual({
       [id] : {
         name,
@@ -36,6 +44,23 @@ describe('keg list reducer', () => {
         alcoholContent,
         pintsLeft,
         id
+      }
+    });
+  });
+
+  test('Should successfully delete a keg', () => {
+    action = {
+      type: 'DELETE_KEG',
+      id: 1
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {
+        name: 'Soft Seasonal Saison',
+        brand: 'Bend Brewing',
+        priceByKeg: 105,
+        alcoholContent: 4.4,
+        pintsLeft: 100,
+        id: 2,
       }
     });
   });
