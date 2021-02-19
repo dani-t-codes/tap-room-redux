@@ -12,6 +12,20 @@ export default (state = {}, action) => {
           id
         }
       });
+    // case 'BUY_PINT':
+    //   return Object.assign({}, state, {
+    //     [id]: {
+    //       pintsLeft: pintsLeft - 1,
+    //       id
+    //     }
+    //   })
+    // case 'RESTOCK_KEG':
+    //   return Object.assign({}, state, {
+    //     [id]: {
+    //       pintsLeft: pintsLeft + 124,
+    //       id
+    //     }
+    //   });
     case 'DELETE_KEG':
       let newState = { ...state };
       delete newState[id];
