@@ -4,7 +4,7 @@ import * as c from '../../actions/ActionTypes';
 describe('tap room actions', () => {
   it('addKeg should create ADD_KEG action', () => {
     expect(actions.addKeg({name: 'Tyrannical IPA', brand: 'Fort George',priceByKeg: 120, alcoholContent: 8.4, pintsLeft: 124, id: 1})).toEqual({
-      type: 'ADD_KEG',
+      type: c.ADD_KEG,
       name: 'Tyrannical IPA',
       brand: 'Fort George',
       priceByKeg: 120,
