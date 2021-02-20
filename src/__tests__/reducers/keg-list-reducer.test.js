@@ -1,4 +1,5 @@
 import kegListReducer from '../../reducers/keg-list-reducer';
+import * as c from '../../actions/ActionTypes';
 
 describe('keg list reducer', () => {
 
@@ -28,7 +29,7 @@ describe('keg list reducer', () => {
   test('Should successfully add new keg data to masterKegList', () => {
     const { name, brand, priceByKeg, alcoholContent, pintsLeft, id } = currentState;
     action = {
-      type: 'ADD_KEG',
+      type: c.ADD_KEG,
       name,
       brand,
       priceByKeg,
