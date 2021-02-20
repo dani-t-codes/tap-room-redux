@@ -1,4 +1,4 @@
-import * as actions from './../../actions';
+import * as actions from '../../actions/Index';
 
 describe('tap room actions', () => {
   it('addKeg should create ADD_KEG action', () => {
