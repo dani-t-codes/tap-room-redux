@@ -6,7 +6,7 @@
 
 ### By Danielle Thompson
 
-### Project began 2.12.21. Last updated 2.19.21
+### Project began 2.12.21. Last updated 2.21.21
 
 </div>
 
@@ -20,7 +20,7 @@ danithompson74 at gmail.com | [LinkedIn](https://www.linkedin.com/in/danielle-th
 
 _No known bugs at this time._
 
-[Report bugs here.](https://github.com/dani-t-codes/tap-room/issues) | [Request features here.](https://github.com/dani-t-codes/tap-room/issues)
+[Report bugs here.](https://github.com/dani-t-codes/tap-room-redux/issues) | [Request features here.](https://github.com/dani-t-codes/tap-room-redux/issues)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 ## Description
 
-This is an application for a tap room to track their keg inventory.
+This is an application for a tap room to track their keg inventory using React/Redux framework.
 
 ### Objectives
 
@@ -119,10 +119,12 @@ onclick to delete a keg (inventory) {stretch} {_done_}
 - ES6 JavaScript
 - JSX
 - React Framework v17.0
+- Redux v4.0.5
 - npm
 - node.js
 - `create-react-app`
 - `npm install --save-exact react-scripts@3.2.0`
+- `npm install redux@4.0.5 react-redux@7.1.3`
 - webpack v5.11.1
 - Babel
 - ESLint
@@ -155,7 +157,7 @@ ___
 
 ###### For Both Mac & Windows systems
 
-* Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/tap-room), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/tap-room.git`.
+* Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/tap-room-redux), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/tap-room-redux.git`.
 * Go to the [Node.js website](https://nodejs.org/en/download/) and download the appropriate source code for your Windows operating system.
 * Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice.
 
